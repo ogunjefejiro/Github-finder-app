@@ -18,7 +18,7 @@ export const GithubProvider = ({children}) => {
         setLoading()
 
         const params = new URLSearchParams({
-            q: text,
+            q: text
         })
         const response = await fetch(`${GITHUB_URL}/search/users?${params}`)
         const {items} = await response.json()
